@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#005baa" />
+  <meta name="description"
+    content="Temukan mobil Daihatsu impian bersama Nanda. Konsultasi gratis, simulasi kredit, promo, testimoni, dan proses serah terima yang transparan." />
+  <title>Daihatsu Nanda | Mobil Baru, Promo & Konsultasi</title>
+  <link rel="icon" href="./img/logo-daihatsu.webp" type="image/webp" />
+  <link rel="preload" href="./img/sigra.webp" as="image" type="image/webp" fetchpriority="high" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" />
+    </symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24">
+      <path d="m5 11 1.8-4.2A3 3 0 0 1 9.6 5h4.8a3 3 0 0 1 2.8 1.8L19 11M4 11h16a1 1 0 0 1 1 1v5H3v-5a1 1 0 0 1 1-1Z" />
+      <path d="M6 17v2M18 17v2M7 14h.01M17 14h.01" />
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6" />
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="m9 18 6-6-6-6" />
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18" />
+    </symbol>
+    <symbol id="icon-filter" viewBox="0 0 24 24">
+      <path d="M4 6h16M7 12h10M10 18h4" />
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path
+        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+    </symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24">
+      <path
+        d="M4 13v-1a8 8 0 0 1 16 0v1M5 12H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v-7H5ZM19 12h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2v-7h1ZM18 19c0 2-2 3-5 3" />
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <path d="M17.5 6.5h.01" />
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3 7 9 6 9-6" />
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path
+        d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z" />
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-4-4" />
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+      <path d="m9 12 2 2 4-4" />
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="m12 2.5 3 6.1 6.7 1-4.8 4.7 1.1 6.7-6-3.2-6 3.2 1.1-6.7-4.8-4.7 6.7-1 3-6.1Z" />
+    </symbol>
+    <symbol id="icon-tag" viewBox="0 0 24 24">
+      <path
+        d="M20.6 13.6 13.7 20.5a2 2 0 0 1-2.8 0L3.5 13.1a2 2 0 0 1-.6-1.4V5a2 2 0 0 1 2-2h6.7a2 2 0 0 1 1.4.6l7.5 7.2a2 2 0 0 1 .1 2.8Z" />
+      <circle cx="8" cy="8" r="1" />
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23l5.4-1.4A11.8 11.8 0 0 0 20.5 3.5Z" />
+      <path
+        d="M8 7.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 2c.1.3.1.5-.1.7l-.7.9c-.2.2-.3.4-.1.7.7 1.3 1.7 2.3 3 3 .3.2.5.1.7-.1l.9-1.1c.2-.3.5-.3.8-.2l2 .9c.3.1.5.2.5.4 0 .2 0 1.2-.7 1.9-.6.7-1.6 1-2.6.8-1.2-.2-2.8-.8-4.7-2.4-1.5-1.3-2.6-2.8-3-4.1-.5-1.3 0-2.7.5-3.4Z" />
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header" id="beranda">
+    <div class="utility-bar">
+
+    </div>
+    <div class="nav-wrap">
+      <div class="container nav-inner">
+        <a class="brand" href="#beranda" aria-label="Daihatsu Nanda - Beranda">
+          <img src="./img/logo-astradaihatsu.svg" alt="Astra Daihatsu" width="223" height="30" />
+          <span>Daihatsu <strong>Nanda</strong></span>
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+          <a class="active" href="#beranda">Beranda</a>
+          <a href="#mobil">Mobil Baru</a>
+          <a href="#promo">Promo</a>
+          <a href="#testimoni">Testimoni</a>
+          <a href="#serah-terima">Serah Terima</a>
+          <a href="#tentang">Tentang Kami</a>
+        </nav>
+
+        <button class="menu-button" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="main-nav">
+          <svg>
+            <use href="#icon-menu" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+
+    <section class="catalog section" id="mobil" aria-labelledby="catalog-title">
+      <!-- Colorful Banner -->
+      <div class="catalog-banner">
+        <div class="catalog-banner-decor" aria-hidden="true">
+          <div class="cb-shape cb-circle-purple"></div>
+          <div class="cb-shape cb-circle-blue"></div>
+          <div class="cb-shape cb-triangle-orange"></div>
+          <div class="cb-shape cb-dots-left"></div>
+          <div class="cb-shape cb-dots-right"></div>
+        </div>
+        <div class="container catalog-banner-inner">
+          <h2 id="catalog-title">Daftar Harga Mobil Daihatsu</h2>
+          <p>Pilih berbagai tipe dan varian mobil Daihatsu dengan harga dan spesifikasi lengkap. Temukan kendaraan yang
+            sesuai kebutuhan Anda.</p>
+        </div>
+      </div>
+
+      <div class="container catalog-container">
+        <div class="catalog-filter-bar">
+          <div class="filter-bar-left">
+            <label class="search-field">
+              <svg>
+                <use href="#icon-search" />
+              </svg>
+              <span class="sr-only">Cari mobil</span>
+              <input id="car-search" type="search" placeholder="Cari..." autocomplete="off" />
+            </label>
+            <p class="result-count-label"><strong id="result-count">11</strong> Results</p>
+          </div>
+          <div class="filter-bar-right">
+            <span class="filter-label-text"><svg>
+                <use href="#icon-filter" />
+              </svg> Filter Pencarian</span>
+            <button id="reset-filter" class="clear-all-btn" type="button">Clear All</button>
+            <select id="category-filter" class="filter-select">
+              <option value="">Model Kendaraan</option>
+              <option value="mpv">MPV</option>
+              <option value="suv">SUV</option>
+              <option value="hatchback">Hatchback</option>
+              <option value="commercial">Komersial</option>
+            </select>
+            <select id="price-filter" class="filter-select">
+              <option value="320">Kisaran Harga</option>
+              <option value="180">s.d Rp 180 juta</option>
+              <option value="230">s.d Rp 230 juta</option>
+              <option value="280">s.d Rp 280 juta</option>
+            </select>
+            <div class="sort-divider"></div>
+            <label class="sort-field">
+              <select id="car-sort" aria-label="Urutkan mobil">
+                <option value="featured">Rekomendasi</option>
+                <option value="price-asc">Harga terendah</option>
+                <option value="price-desc">Harga tertinggi</option>
+                <option value="name">Nama A–Z</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span><svg>
+              <use href="#icon-search" />
+            </svg></span>
+          <h3>Mobil belum ditemukan</h3>
+          <p>Coba kata kunci atau kombinasi filter yang lain.</p>
+          <button class="button button-blue" id="empty-reset">Tampilkan semua mobil</button>
+        </div>
+        <nav class="pagination" id="pagination" aria-label="Halaman katalog"></nav>
+        <p class="price-disclaimer">*Harga yang tampil adalah harga mulai/estimasi dan dapat berubah mengikuti tipe,
+          wilayah, serta program yang berlaku.</p>
+      </div>
+    </section>
+
+
+
+    <section class="testimonials section" id="testimoni" aria-labelledby="testimonial-title">
+      <div class="dot-pattern testimonial-dots" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading light-heading reveal">
+          <div>
+            <p class="eyebrow light"><span></span> Cerita Pelanggan</p>
+            <h2 id="testimonial-title">Pengalaman nyata, rasa tenang yang sama.</h2>
+            <p>Ulasan langsung dari pelanggan yang telah dibantu memilih hingga menerima unitnya.</p>
+          </div>
+          <div class="rating-summary"><strong>5.0</strong><span class="stars">★★★★★</span><small>Ulasan
+              pelanggan</small></div>
+        </div>
+        <div class="slider-shell testimonial-shell reveal">
+          <button class="slider-button prev" data-slider="testimonial-track" data-direction="-1"
+            aria-label="Testimoni sebelumnya"><svg>
+              <use href="#icon-chevron" />
+            </svg></button>
+          <div class="testimonial-track slider-track" id="testimonial-track" tabindex="0">
+            <figure class="testimonial-card">
+              <div class="testimonial-image"><img src="./testimoni/testimoni-01.webp"
+                  alt="Ulasan pelanggan Daihatsu Nanda" width="1080" height="1107" loading="lazy" decoding="async" />
+              </div>
+            </figure>
+            <figure class="testimonial-card">
+              <div class="testimonial-image"><img src="./testimoni/testimoni-02.webp"
+                  alt="Ulasan pelanggan tentang pelayanan Daihatsu Nanda" width="1080" height="1024" loading="lazy"
+                  decoding="async" /></div>
+            </figure>
+            <figure class="testimonial-card">
+              <div class="testimonial-image"><img src="./testimoni/testimoni-03.webp"
+                  alt="Testimoni pelanggan setelah menerima mobil Daihatsu" width="709" height="1600" loading="lazy"
+                  decoding="async" /></div>
+            </figure>
+            <figure class="testimonial-card">
+              <div class="testimonial-image"><img src="./testimoni/testimoni-04.webp"
+                  alt="Ulasan bintang lima pelanggan Daihatsu Nanda" width="1080" height="1178" loading="lazy"
+                  decoding="async" /></div>
+            </figure>
+            <figure class="testimonial-card">
+              <div class="testimonial-image"><img src="./testimoni/testimoni-05.webp"
+                  alt="Ulasan pelanggan Daihatsu bersama Nanda" width="1080" height="1110" loading="lazy"
+                  decoding="async" /></div>
+            </figure>
+          </div>
+          <button class="slider-button next" data-slider="testimonial-track" data-direction="1"
+            aria-label="Testimoni berikutnya"><svg>
+              <use href="#icon-chevron" />
+            </svg></button>
+        </div>
+        <div class="slider-dots" data-dots-for="testimonial-track" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="handover section" id="serah-terima" aria-labelledby="handover-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Momen Bahagia</p>
+            <h2 id="handover-title">Foto serah terima unit</h2>
+            <p>Setiap kunci punya cerita. Geser untuk melihat momen pelanggan bersama mobil barunya.</p>
+          </div>
+          <div class="gallery-count"><strong>20+</strong><span>Unit<br />diserahkan</span></div>
+        </div>
+        <div class="slider-shell gallery-shell reveal">
+          <button class="slider-button prev" data-slider="handover-track" data-direction="-1"
+            aria-label="Foto sebelumnya"><svg>
+              <use href="#icon-chevron" />
+            </svg></button>
+          <div class="handover-track slider-track" id="handover-track" tabindex="0"></div>
+          <button class="slider-button next" data-slider="handover-track" data-direction="1"
+            aria-label="Foto berikutnya"><svg>
+              <use href="#icon-chevron" />
+            </svg></button>
+        </div>
+        <div class="slider-dots handover-dots" data-dots-for="handover-track" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Keunggulan layanan Daihatsu Nanda">
+      <div class="container benefits-grid">
+        <article><span><svg>
+              <use href="#icon-star" />
+            </svg></span>
+          <div><strong>Mobil Berkualitas</strong><small>Unit resmi & bergaransi</small></div>
+        </article>
+        <article><span><svg>
+              <use href="#icon-tag" />
+            </svg></span>
+          <div><strong>Harga Transparan</strong><small>Tanpa biaya tersembunyi</small></div>
+        </article>
+        <article><span><svg>
+              <use href="#icon-shield" />
+            </svg></span>
+          <div><strong>Proses Terpercaya</strong><small>Informasi jelas & aman</small></div>
+        </article>
+        <article><span><svg>
+              <use href="#icon-heart" />
+            </svg></span>
+          <div><strong>Pelanggan Utama</strong><small>Kepuasan adalah prioritas</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="tentang" aria-labelledby="contact-title">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow light"><span></span> Siap Membantu Anda</p>
+          <h2 id="contact-title">Masih bingung pilih tipe atau skema pembelian?</h2>
+          <p>Diskusikan kebutuhan Anda langsung bersama Nanda. Tidak ada komitmen dan tidak ada biaya konsultasi.</p>
+        </div>
+        <button class="button button-yellow" data-open-lead><svg>
+            <use href="#icon-whatsapp" />
+          </svg> Mulai Konsultasi</button>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Floating Hubungi Salesman Mascot Widget -->
+  <div class="floating-salesman" id="floating-salesman">
+    <button class="salesman-close-btn" id="salesman-close-btn" type="button" aria-label="Tutup penawaran salesman">
+      <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.5" fill="none">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button class="salesman-trigger-btn" data-open-sosmed type="button" aria-label="Hubungi Salesman Nanda">
+      <img src="./img/ICON_TALK.png" alt="Hubungi Salesman" class="salesman-img" width="120" height="146" />
+    </button>
+  </div>
+
+  <button class="floating-whatsapp" data-open-sosmed aria-label="Kontak WhatsApp dan TikTok Nanda">
+    <span class="floating-sosmed-wrap">
+      <img src="./img/icon_sosmed.png" alt="Hubungi Nanda" class="sosmed-btn-img" width="38" height="38" />
+    </span>
+    <strong>Butuh bantuan?<small>WhatsApp & TikTok</small></strong>
+  </button>
+
+  <!-- Sosmed Pop-up Dialog (WhatsApp & TikTok) -->
+  <dialog class="sosmed-dialog" id="sosmed-dialog" aria-labelledby="sosmed-title">
+    <form method="dialog" class="dialog-close-form">
+      <button class="dialog-close" value="cancel" aria-label="Tutup"><svg>
+          <use href="#icon-close" />
+        </svg></button>
+    </form>
+    <div class="sosmed-head">
+      <div class="sosmed-avatar-badge">
+        <img src="./img/icon_sosmed.png" alt="Nanda Daihatsu" width="52" height="52" />
+      </div>
+      <div>
+        <span class="sosmed-pill">Sales Resmi Astra Daihatsu</span>
+        <h2 id="sosmed-title">Hubungi Nanda</h2>
+        <p>Pilih kanal komunikasi resmi di bawah ini</p>
+      </div>
+    </div>
+
+    <div class="sosmed-choices">
+      <a href="https://wa.me/6285880015010?text=Halo%20Kak%20Nanda%2C%20saya%20tertarik%20dengan%20mobil%20Daihatsu%20dan%20ingin%20konsultasi%20promo%20terbaru."
+        target="_blank" rel="noopener noreferrer" class="sosmed-card wa-card">
+        <div class="sosmed-card-icon wa-icon">
+          <svg>
+            <use href="#icon-whatsapp" />
+          </svg>
+        </div>
+        <div class="sosmed-card-text">
+          <span class="sosmed-card-title">Chat WhatsApp</span>
+          <span class="sosmed-card-sub">0858 - 8001 - 5010</span>
+          <small class="sosmed-card-desc">Respon cepat • Promo </small>
+        </div>
+        <span class="sosmed-card-arrow"><svg>
+            <use href="#icon-arrow" />
+          </svg></span>
+      </a>
+
+      <a href="https://www.tiktok.com/@nandasalesdaihatsu?_r=1&_t=ZS-99pshaeM7By" target="_blank"
+        rel="noopener noreferrer" class="sosmed-card tiktok-card">
+        <div class="sosmed-card-icon tiktok-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path
+              d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.5 6.3 6.3 0 0 0 1.86-4.49V8.75a8.28 8.28 0 0 0 4.88 1.58V6.88a4.84 4.84 0 0 1-.97-.19Z" />
+          </svg>
+        </div>
+        <div class="sosmed-card-text">
+          <span class="sosmed-card-title">Profil TikTok</span>
+          <span class="sosmed-card-sub">@nandasalesdaihatsu</span>
+          <small class="sosmed-card-desc">Review mobil & momen serah terima</small>
+        </div>
+        <span class="sosmed-card-arrow"><svg>
+            <use href="#icon-arrow" />
+          </svg></span>
+      </a>
+    </div>
+
+    <div class="sosmed-footer">
+      <div class="sosmed-promo-box">
+        <svg>
+          <use href="#icon-tag" />
+        </svg>
+        <p>Promo Daihatsu pembelian <strong>Cash/Kredit</strong> bisa DM atau Hub : <a
+            href="https://wa.me/6285880015010?text=Halo%20Kak%20Nanda%2C%20saya%20tertarik%20dengan%20Promo%20Daihatsu%20Cash%2FKredit."
+            target="_blank" rel="noopener noreferrer"><strong>0858 - 8001 - 5010</strong></a></p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Lead Form Dialog -->
+  <dialog class="lead-dialog" id="lead-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="dialog-close-form"><button class="dialog-close" value="cancel" aria-label="Tutup"><svg>
+          <use href="#icon-close" />
+        </svg></button></form>
+    <div class="dialog-head">
+      <span><svg>
+          <use href="#icon-whatsapp" />
+        </svg></span>
+      <div>
+        <p>Konsultasi Gratis</p>
+        <h2 id="dialog-title">Ceritakan mobil kebutuhan Anda</h2>
+      </div>
+    </div>
+    <p class="dialog-intro">Isi singkat data berikut. Setelah itu, Anda akan diarahkan ke WhatsApp Nanda dengan pesan
+      yang sudah siap.</p>
+    <form id="lead-form">
+      <div class="form-grid">
+        <label>Nama lengkap<input id="lead-name" name="name" type="text" placeholder="Nama Anda" required /></label>
+        <label>Domisili<input id="lead-city" name="city" type="text" placeholder="Contoh: Bogor" required /></label>
+      </div>
+      <label>Mobil yang diminati<select id="lead-car" name="car">
+          <option value="Belum menentukan">Belum menentukan</option>
+        </select></label>
+      <label>Pesan (opsional)<textarea id="lead-message" name="message" rows="3"
+          placeholder="Contoh: ingin simulasi cicilan 5 tahun"></textarea></label>
+      <button class="button button-whatsapp" type="submit"><svg>
+          <use href="#icon-whatsapp" />
+        </svg> Lanjut ke WhatsApp <svg class="end-icon">
+          <use href="#icon-arrow" />
+        </svg></button>
+      <small class="privacy-note"><svg>
+          <use href="#icon-shield" />
+        </svg> Data hanya digunakan untuk membantu konsultasi Anda.</small>
+    </form>
+  </dialog>
+  <div class="dialog-backdrop" hidden></div>
+
+  <!-- Professional Image Lightbox with Zoom -->
+  <div class="image-lightbox" id="image-lightbox" hidden aria-modal="true" role="dialog"
+    aria-label="Penampil Foto Interaktif">
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-container">
+      <header class="lightbox-header">
+        <div class="lightbox-info">
+          <span class="lightbox-counter" id="lightbox-counter">1 / 1</span>
+          <h3 class="lightbox-title" id="lightbox-title">Foto</h3>
+        </div>
+        <div class="lightbox-toolbar">
+          <button type="button" class="lightbox-btn" id="lightbox-zoom-out" aria-label="Perkecil" title="Zoom Out (-)">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg>
+          </button>
+          <span class="lightbox-zoom-badge" id="lightbox-zoom-badge">100%</span>
+          <button type="button" class="lightbox-btn" id="lightbox-zoom-in" aria-label="Perbesar" title="Zoom In (+)">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
+            </svg>
+          </button>
+          <button type="button" class="lightbox-btn" id="lightbox-zoom-reset" aria-label="Reset ukuran"
+            title="Reset Zoom (0)">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+            </svg>
+          </button>
+          <button type="button" class="lightbox-btn lightbox-close" id="lightbox-close" aria-label="Tutup"
+            title="Tutup (Esc)">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="lightbox-stage-wrap" id="lightbox-stage-wrap">
+        <button type="button" class="lightbox-arrow prev" id="lightbox-prev" aria-label="Foto sebelumnya">
+          <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2.5" fill="none">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <div class="lightbox-viewport" id="lightbox-viewport">
+          <img src="" alt="" id="lightbox-img" class="lightbox-img" draggable="false" />
+        </div>
+
+        <button type="button" class="lightbox-arrow next" id="lightbox-next" aria-label="Foto berikutnya">
+          <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2.5" fill="none">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </div>
+
+      <footer class="lightbox-footer">
+        <span class="lightbox-help">Tip: Klik 2x atau putar scroll untuk zoom • Drag foto saat diperbesar</span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav class="mobile-bottom-nav" aria-label="Navigasi mobile">
+    <a href="#beranda" class="mob-nav-item">
+      <svg>
+        <use href="#icon-location" />
+      </svg>
+      <span>Beranda</span>
+    </a>
+    <a href="#product-grid" class="mob-nav-item">
+      <svg>
+        <use href="#icon-car" />
+      </svg>
+      <span>Katalog</span>
+    </a>
+    <button class="mob-nav-item mob-nav-wa" data-open-sosmed aria-label="WhatsApp & TikTok Nanda">
+      <span class="mob-wa-circle">
+        <img src="./img/icon_sosmed.png" alt="Hubungi Nanda" class="mob-sosmed-img" width="36" height="36" />
+      </span>
+      <span>Kontak</span>
+    </button>
+    <a href="#testimoni" class="mob-nav-item">
+      <svg>
+        <use href="#icon-star" />
+      </svg>
+      <span>Ulasan</span>
+    </a>
+    <a href="#tentang" class="mob-nav-item">
+      <svg>
+        <use href="#icon-phone" />
+      </svg>
+      <span>Kontak</span>
+    </a>
+  </nav>
+
+</body>
+
+</html>
